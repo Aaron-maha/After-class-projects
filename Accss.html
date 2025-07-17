@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Asscnding order</h2>
+        <p>click Asscnding order.</p>
+        <button onclick="Accending()">Accending order</button>
+        <p id="result"></p>
+        <script>
+            alert("Click the button to sort the numbers in ascending order.");
+            var points = [999, 1000, 1, 9, 99, 100];
+            function Accending() {
+                points.sort(function(a, b){return a - b});
+                document.getElementById("result").innerHTML = points;
+            }
+            alert("The numbers in ascending order are: " + points);
+        </script>
+    </body>
+</html>
