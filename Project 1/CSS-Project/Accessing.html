@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Asscnding order</h2>
+        <p>click Asscnding order.</p>
+        <button onclick="Accending()">Accending order</button>
+        <p id="result"></p>
+        <script>
+            var points = [40, 100, 1, 5, 25, 10];
+            function Accending() {
+                points.sort(function(a, b){return a - b});
+                document.getElementById("result").innerHTML = points;
+            }
+        </script>
+    </body>
+</html>
