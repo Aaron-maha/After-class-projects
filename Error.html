@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Error!!</h2>
+        <p>There is some<b> Error </b>in the message.</p>
+        <p id="error_message"></p>
+        <script>
+            try{
+                addaiert("Welcome guest!");
+            }
+            catch(err){
+                document.getElementById("error_message").innerHTML = err.message;
+            }
+        </script>
+    </body>
+</html>
